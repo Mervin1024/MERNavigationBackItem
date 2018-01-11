@@ -16,6 +16,8 @@
 		8C0A9C2620070D6300DA2C99 /* UINavigationItem_backItemDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A9C2520070D6300DA2C99 /* UINavigationItem_backItemDemoTests.m */; };
 		8C0A9C3120070D6300DA2C99 /* UINavigationItem_backItemDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A9C3020070D6300DA2C99 /* UINavigationItem_backItemDemoUITests.m */; };
 		8C0A9C4020070E3600DA2C99 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A9C3F20070E3600DA2C99 /* TestViewController.m */; };
+		8CDEE9C420075F930080E7BE /* UINavigationBar+BackItem_iOS11.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEE9C020075F920080E7BE /* UINavigationBar+BackItem_iOS11.m */; };
+		8CDEE9C520075F930080E7BE /* UINavigationItem+BackItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEE9C120075F920080E7BE /* UINavigationItem+BackItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		8C0A9C3220070D6300DA2C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C0A9C3E20070E3600DA2C99 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		8C0A9C3F20070E3600DA2C99 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		8CDEE9C020075F920080E7BE /* UINavigationBar+BackItem_iOS11.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+BackItem_iOS11.m"; sourceTree = "<group>"; };
+		8CDEE9C120075F920080E7BE /* UINavigationItem+BackItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+BackItem.m"; sourceTree = "<group>"; };
+		8CDEE9C220075F920080E7BE /* UINavigationBar+BackItem_iOS11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+BackItem_iOS11.h"; sourceTree = "<group>"; };
+		8CDEE9C320075F920080E7BE /* UINavigationItem+BackItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+BackItem.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		8C0A9C0B20070D6300DA2C99 /* UINavigationItem-backItemDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8CDEE9BF20075F7C0080E7BE /* categoreis */,
 				8C0A9C0C20070D6300DA2C99 /* AppDelegate.h */,
 				8C0A9C0D20070D6300DA2C99 /* AppDelegate.m */,
 				8C0A9C0F20070D6300DA2C99 /* ViewController.h */,
@@ -135,6 +142,17 @@
 				8C0A9C3220070D6300DA2C99 /* Info.plist */,
 			);
 			path = "UINavigationItem-backItemDemoUITests";
+			sourceTree = "<group>";
+		};
+		8CDEE9BF20075F7C0080E7BE /* categoreis */ = {
+			isa = PBXGroup;
+			children = (
+				8CDEE9C220075F920080E7BE /* UINavigationBar+BackItem_iOS11.h */,
+				8CDEE9C020075F920080E7BE /* UINavigationBar+BackItem_iOS11.m */,
+				8CDEE9C320075F920080E7BE /* UINavigationItem+BackItem.h */,
+				8CDEE9C120075F920080E7BE /* UINavigationItem+BackItem.m */,
+			);
+			path = categoreis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C0A9C1120070D6300DA2C99 /* ViewController.m in Sources */,
+				8CDEE9C420075F930080E7BE /* UINavigationBar+BackItem_iOS11.m in Sources */,
 				8C0A9C1C20070D6300DA2C99 /* main.m in Sources */,
 				8C0A9C4020070E3600DA2C99 /* TestViewController.m in Sources */,
+				8CDEE9C520075F930080E7BE /* UINavigationItem+BackItem.m in Sources */,
 				8C0A9C0E20070D6300DA2C99 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

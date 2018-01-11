@@ -16,14 +16,14 @@
 @implementation ViewController
 
 + (void)initialize {
-    CGFloat screenHeight = CGRectGetHeight([UIScreen mainScreen].bounds);
-    CGFloat screenWidth = CGRectGetWidth([UIScreen mainScreen].bounds);
-    if (@available (iOS 11.0, *)) {
-        UIBarButtonItem *backBarButton = [UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil];
-        [backBarButton setBackButtonTitlePositionAdjustment:UIOffsetMake(-screenWidth, -0) forBarMetrics:UIBarMetricsDefault];
-    } else {
-        [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-screenWidth, -screenHeight) forBarMetrics:UIBarMetricsDefault];
-    }
+//    CGFloat screenHeight = CGRectGetHeight([UIScreen mainScreen].bounds);
+//    CGFloat screenWidth = CGRectGetWidth([UIScreen mainScreen].bounds);
+//    if (@available (iOS 11.0, *)) {
+//        UIBarButtonItem *backBarButton = [UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil];
+//        [backBarButton setBackButtonTitlePositionAdjustment:UIOffsetMake(-screenWidth, -0) forBarMetrics:UIBarMetricsDefault];
+//    } else {
+//        [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-screenWidth, -screenHeight) forBarMetrics:UIBarMetricsDefault];
+//    }
 
 }
 
