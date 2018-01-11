@@ -14,13 +14,13 @@
 +(void)load{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-//        if (@available(iOS 11.0, *)) {
-//            // iOS 11 无效
-//        } else {
+        if (@available(iOS 11.0, *)) {
+            // iOS 11 无效
+        } else {
             Method originalMethodImp = class_getInstanceMethod(self, @selector(backBarButtonItem));
             Method destMethodImp = class_getInstanceMethod(self, @selector(myCustomBackButton_backBarbuttonItem));
             method_exchangeImplementations(originalMethodImp, destMethodImp);
-//        }
+        }
     });
 }
 

@@ -13,14 +13,14 @@
 @implementation UINavigationBar (BackItem_iOS11)
 
 + (void)load {
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        if (@available(iOS 11, *)) {    // iOS 11 以下无效
-//            Method originalMethodImp = class_getInstanceMethod(self, @selector(pushNavigationItem:animated:));
-//            Method destMethodImp = class_getInstanceMethod(self, @selector(iOS11CustomPushNavigationItem:animated:));
-//            method_exchangeImplementations(originalMethodImp, destMethodImp);
-//        }
-//    });
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (@available(iOS 11, *)) {    // iOS 11 以下无效
+            Method originalMethodImp = class_getInstanceMethod(self, @selector(pushNavigationItem:animated:));
+            Method destMethodImp = class_getInstanceMethod(self, @selector(iOS11CustomPushNavigationItem:animated:));
+            method_exchangeImplementations(originalMethodImp, destMethodImp);
+        }
+    });
 }
 
 - (void)iOS11CustomPushNavigationItem:(UINavigationItem *)item animated:(BOOL)animated {
