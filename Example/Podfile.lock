@@ -1,0 +1,16 @@
+PODS:
+  - MERNavigationBackItem (0.1.0)
+
+DEPENDENCIES:
+  - MERNavigationBackItem (from `../`)
+
+EXTERNAL SOURCES:
+  MERNavigationBackItem:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MERNavigationBackItem: 9576286c2dc9aba6fdc4bf3d5cc922cfb4d0fedf
+
+PODFILE CHECKSUM: 5390d96b79c4a06f8c75f46dda37c8dba72fd106
+
+COCOAPODS: 1.5.0

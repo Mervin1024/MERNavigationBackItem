@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MERNavigationBackItem_Example' do
+  pod 'MERNavigationBackItem', :path => '../'
+
+  target 'MERNavigationBackItem_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
