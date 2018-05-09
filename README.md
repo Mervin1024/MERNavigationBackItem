@@ -1,6 +1,6 @@
 # MERNavigationBackItem
 
-[![CI Status](https://img.shields.io/travis/马遥/MERNavigationBackItem.svg?style=flat)](https://travis-ci.org/马遥/MERNavigationBackItem)
+[![CI Status](https://img.shields.io/travis/Mervin1024/MERNavigationBackItem.svg?style=flat)](https://travis-ci.org/Mervin1024/MERNavigationBackItem)
 [![Version](https://img.shields.io/cocoapods/v/MERNavigationBackItem.svg?style=flat)](https://cocoapods.org/pods/MERNavigationBackItem)
 [![License](https://img.shields.io/cocoapods/l/MERNavigationBackItem.svg?style=flat)](https://cocoapods.org/pods/MERNavigationBackItem)
 [![Platform](https://img.shields.io/cocoapods/p/MERNavigationBackItem.svg?style=flat)](https://cocoapods.org/pods/MERNavigationBackItem)
@@ -9,7 +9,15 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [UINavigationBar appearance].mer_globalBackBarButtonTitle = @"CustomBack";
+
+    return YES;
+}
+```
+
 
 ## Installation
 
