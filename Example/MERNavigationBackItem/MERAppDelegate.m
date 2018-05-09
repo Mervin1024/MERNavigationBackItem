@@ -13,7 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [UINavigationBar appearance].mer_globalBackBarButtonTitle = @"11112222";
+    [UINavigationBar appearance].mer_globalBackBarButtonTitle = @"测试";
 
     // Override point for customization after application launch.
     return YES;
